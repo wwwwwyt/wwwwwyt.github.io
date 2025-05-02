@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Yitao Wang</title>
+    <meta name="author" content="Yitao Wang">
+    <!-- 你可以在此处引入自己的 CSS 文件或修改为合适的路径 -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="images/personal/ucb.svg">
+
+    <!-- 引入必要的 JS 库 (jQuery, jQuery UI, Isotope) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  </head>
+
+  <body id="body">
+
+    <!-- 主体容器 -->
+    <div id="main">
+
+      <!-- 个人信息介绍部分 -->
+      <div id="intro">
+        <div id="intro-text">
+          <h1>WANG YITAO</h1>
+          <p>
+            我是华南理工大学广州学院 机器人工程 2025届本科生。
+          <p>
+            专注于机器人运动控制、嵌入式硬件集成与系统设计。  
+            <br><br>
+            <b>年龄：</b>21 岁  
+            <br>
+            <b>电话：</b>15918888384  
+            <br>
+            <b>邮箱：</b><a href="mailto:wyytw68@gmail.com">wyytw68@gmail.com</a>  
+            <br>
+            <b>个人文档：</b><a href="https://round-knee-8c4.notion.site/9c6ff6af44cf459f9e0bf2b97e10b72f?pvs=4" target="_blank">Notion</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <b>代码仓库：</b><a href="https://wwwwwyt.github.io" target="_blank">GitHub</a>
+            <br><br>
+            脚踏实地，努力在创新与实践中不断突破，成为卓越的机器人工程师 
+          </p>
+        </div>
+        <div style="position: absolute; right: 0; top: 0; z-index: 1;">
+
+            <img src="picture\ugrly.jpg" 
+                 style="width: 120px; 
+                        border: 2px solid #e0e0e0;
+                        border-radius: 4px;
+                        box-shadow: 0 2px 6px rgbaå(0,0,0,0.1);
+                        margin-top: 80px;
+                        margin-right: 60px;">
+            
+            </div>
+      </div>
+  
+      <!-- 筛选按钮：Highlight / Projects / Misc -->
+      <div id="filters" class="button-group">
+        <button class="button is-checked" data-filter=".highlight">Highlights</button>
+        <button class="button" data-filter=".publication">Projects & Experience</button>
+        <button class="button" data-filter=".misc">Misc</button>
+      </div>
+  
+      <!-- 网格内容区域 -->
+      <div class="grid">
+
+        <!-- 1) Highlights 区域：可以放视频/图片预览或简介 -->
+        <div class="list-item highlight previews" data-category="highlight">
+          <!-- 这里放置三个视频/图片的预览占位符，如果不需要可以删除或替换 -->
+          <a href="#">
+            <video class="preview2" playsinline muted autoplay loop 
+                   style="width: 300px; height: auto;">
+              <source src="video/wheel_leg/off_the_ground.mp4" type="video/mp4">
+            </video>
+          </a>
+          <a href="#">
+            <video class="preview3" playsinline muted autoplay loop 
+                   style="width: 300px; height: auto;">
+              <source src="video/positioning_navigation.mp4" type="video/mp4">
+            </video>
+          </a>
+
+        <!-- Highlights 简要文字 -->
+        <div id="main-highlights">
+          <div class="list-item highlight" data-category="highlight">
+            华广机器人野狼队 2021.9-2024.8
+          </div>
+          <div class="list-item highlight" data-category="highlight">
+            拥有多项授权专利（机器人移动机构/射击装置等）
+          </div>
+        </div>
+
+        <!-- 2) Projects & Experience 区域：替换为你的竞赛、实习、项目等 -->
+        <!-- RoboMaster 2024 Balanced Infantry -->
+        <div class="list-item publication" data-category="publication">
+
+          <div class="project-description">
+            <h3>RoboMaster 2024 平衡步兵（轮足机器人）</h3>
+            <p>
+              <b>背景：</b>传统四轮底盘通过性及控制鲁棒性不足，借比赛规则利好进行全新设计；<br>
+              <b>方案：</b>采用倒立摆模型 + LQR 控制器，配合 MATLAB 仿真，设计五连杆轮足动力学，减少故障率并提升通过性；<br>
+              <b>成果：</b>在坡面、阶梯等多种复杂地形实现稳定行走，助力队伍获 <b>RoboMaster 全国二等奖</b>。
+            </p>
+          </div>
+        </div>
+
+        <!-- RoboMaster 2023 Sentry -->
+        <div class="list-item publication" data-category="publication">
+          <a class="thumbnail">
+          </a>
+          <div class="project-description">
+            <h3>RoboMaster 2023 哨兵（自动车）</h3>
+            <p>
+              <b>问题：</b>决策系统状态切换不灵活，路径规划对环境变化适应性不足；<br>
+              <b>方案：</b>使用 ROS2 + BehaviorTree 实现高层决策（攻击/追击/防守），并结合改进 A*（圆弧插补）保证路径平滑；<br>
+              <b>成果：</b>整体响应速度提升 25%，车辆机动性显著增强，最终斩获 <b>全国二等奖</b>。
+            </p>
+          </div>
+        </div>
+
+        <!-- RoboMaster 2022 Automatic Aiming -->
+        <div class="list-item publication" data-category="publication">
+          <div class="project-description">
+            <h3>RoboMaster 2022 自动瞄准系统</h3>
+            <p>
+              <b>问题：</b>高速运动状态下，视觉识别难以稳定、快速地捕捉并跟踪动态目标；<br>
+              <b>方案：</b>基于 OpenCV 装甲板识别（腐蚀/膨胀/PnP 重建）、SORT+EKF 目标跟踪，预测误差小于 5%；<br>
+              <b>成果：</b>射击命中率大幅提升，荣获 <b>全国一等奖（南部季军）</b>。
+            </p>
+          </div>
+        </div>
+
+        <!-- Internship & Work Experience -->
+        <div class="list-item publication" data-category="publication">
+          <div class="project-description">
+            <h3>实习经历：高擎机电 / 大疆创新 / 库犸动力 等</h3>
+          </div>
+        </div>
+
+        <!-- 3) Misc 区域：可放专利、展望等 -->
+        <div class="list-item misc" data-category="misc">
+          <div class="project-description">
+            <h3>专利与荣誉</h3>
+            <p>
+              <b>授权专利：</b><br>
+              - 一种转运机器人减震式移动机构 | CN218986277U<br>
+              - 一种发射管道切换装置 | CN117404960A<br>
+              - 一种射击装置 | CN117622850A<br><br>
+              <b>主要竞赛荣誉：</b><br>
+              - 2022 RoboMaster 全国一等奖（南部季军）<br>
+              - 2023 & 2024 RoboMaster 全国二等奖<br>
+              - 2024 RoboCon 全国三等奖<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <div class="project-description">
+            <h3>个人展望</h3>
+            <p>
+              希望在硕士阶段深耕智能控制与人工智能结合，尤其关注多自由度机器人的自适应与协同控制。<br>
+              期待与优秀团队合作，打造更具创新性与实用价值的机器人产品。<br><br>
+              “脚踏实地，努力在创新与实践中不断突破，成为卓越的机器人工程师。”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底部引用信息 -->
+      <div id="footer">
+        Website template adapted from <a href="https://andyzeng.github.io/">Andy Zeng</a> and <a href="https://jonbarron.info/">Jon Barron</a>.
+      </div>
+  
+    </div> <!-- /#main -->
+  
+    <!-- Isotope JS 脚本：实现点击筛选的特效 -->
+    <script>
+      // 初始化 Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]'
+        }
+      });
+  
+      // 筛选按钮点击事件
+      $('#filters').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+  
+      // 高亮选中按钮
+      $('.button-group').each(function (i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function () {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+        });
+      });
+  
+      // 加载时默认的分类
+      function update_isotope() {
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".highlight"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+  
+      update_isotope();
+    </script>
+
+
+  </body>
+</html>
