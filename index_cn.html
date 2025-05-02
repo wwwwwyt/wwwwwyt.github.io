@@ -4,48 +4,48 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Yitao Wang</title>
     <meta name="author" content="Yitao Wang">
-    <!-- You can reference your own CSS file or adjust the path as needed. -->
+    <!-- 你可以在此处引入自己的 CSS 文件或修改为合适的路径 -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" type="image/x-icon" href="images/personal/ucb.svg">
 
-    <!-- Include necessary JS libraries (jQuery, jQuery UI, Isotope) -->
+    <!-- 引入必要的 JS 库 (jQuery, jQuery UI, Isotope) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   </head>
 
   <body id="body">
-    <!-- Main Container -->
+
+    <!-- 主体容器 -->
     <div id="main">
-      <!-- Intro Section -->
+
+      <!-- 个人信息介绍部分 -->
       <div id="intro">
         <div id="intro-text">
           <h1>WANG YITAO</h1>
           <p>
-            I am an undergraduate student in Robotics Engineering, Class of 2025,
-            at Guangzhou College of South China University of Technology.
+            我是华南理工大学广州学院 机器人工程 2025届本科生。
           </p>
           <p>
-            Focused on robotic motion control, embedded hardware integration, and system design.
+            专注于机器人运动控制、嵌入式硬件集成与系统设计。  
             <br><br>
-            <b>Age:</b> 21  
+            <b>年龄：</b>21 岁  
             <br>
-            <b>Phone:</b> 15918888384  
+            <b>电话：</b>15918888384  
             <br>
-            <b>Email:</b> <a href="mailto:wyytw68@gmail.com">wyytw68@gmail.com</a>
+            <b>邮箱：</b><a href="mailto:wyytw68@gmail.com">wyytw68@gmail.com</a>  
             <br>
-            <b>Personal Docs:</b>
+            <b>个人文档：</b>
             <a href="https://round-knee-8c4.notion.site/9c6ff6af44cf459f9e0bf2b97e10b72f?pvs=4" target="_blank">Notion</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <br>
-            <b>Code Repository:</b>
+            <b>代码仓库：</b>
             <a href="https://github.com/wwwwwyt" target="_blank">GitHub</a>
             <br><br>
-            Working diligently and pushing the boundaries of innovation and practice
-            to become an outstanding robotics engineer.
+            脚踏实地，努力在创新与实践中不断突破，成为卓越的机器人工程师 
           </p>
         </div>
 
-        <!-- Photo on the right -->
+        <!-- 右侧头像/图片 -->
         <div style="position: absolute; right: 0; top: 0; z-index: 1;">
           <img src="picture/ugrly.jpg" 
                style="width: 120px; 
@@ -57,121 +57,126 @@
         </div>
       </div>
   
-      <!-- Filter Buttons: Highlight / Projects / Misc -->
+      <!-- 筛选按钮：Highlight / Projects / Misc -->
       <div id="filters" class="button-group">
         <button class="button is-checked" data-filter=".highlight">Highlights</button>
         <button class="button" data-filter=".publication">Projects & Experience</button>
         <button class="button" data-filter=".misc">Misc</button>
       </div>
   
-      <!-- Grid Content -->
+      <!-- 网格内容区域 -->
       <div class="grid">
 
-        <!-- 1) Highlights Section -->
-        <div class="list-item highlight" data-category="highlight">
-          <!-- Text above the videos -->
-          <div id="main-highlights">
-            HG Robotics Wolf Team (2021.9 - 2024.8)
-          </div>
-          
-          <!-- Video Previews below the text -->
-          <div class="previews" style="margin-top: 10px;">
-            <a href="#">
-              <video class="preview2" playsinline muted autoplay loop style="width: 300px; height: auto;">
-                <source src="video/wheel_leg/off_the_ground.mp4" type="video/mp4">
-              </video>
-            </a>
-            <a href="#">
-              <video class="preview3" playsinline muted autoplay loop style="width: 300px; height: auto;">
-                <source src="video/positioning_navigation.mp4" type="video/mp4">
-              </video>
-            </a>
-          </div>
-        </div>
+        <!-- 1) Highlights 区域 -->
+<!-- 将文字和视频放在同一个 div 中 -->
+<div class="list-item highlight" data-category="highlight">
+  <!-- 上方文字 -->
+  <div id="main-highlights">
+    华广机器人野狼队 2021.9-2024.8
+  </div>
+  
+  <!-- 下方视频预览 -->
+  <div class="previews" style="margin-top: 10px;">
+    <a href="#">
+      <video class="preview2" playsinline muted autoplay loop style="width: 300px; height: auto;">
+        <source src="video/wheel_leg/off_the_ground.mp4" type="video/mp4">
+      </video>
+    </a>
+    <a href="#">
+      <video class="preview3" playsinline muted autoplay loop style="width: 300px; height: auto;">
+        <source src="video/positioning_navigation.mp4" type="video/mp4">
+      </video>
+    </a>
+  </div>
+</div>
+
+
+        <!-- Highlights 简要文字 -->
+
 
         <!-- 2) Projects & Experience -->
         <div class="list-item publication" data-category="publication">
           <div class="project-description">
-            <h3>RoboMaster 2024 Balanced Infantry (Wheeled-Leg Robot)</h3>
+            <h3>RoboMaster 2024 平衡步兵（轮足机器人）</h3>
             <p>
-              <b>Background:</b> Traditional four-wheel chassis faced limited terrain adaptability and insufficient robustness.<br>
-              <b>Approach:</b> Adopted an inverted-pendulum model plus LQR controller; validated dynamics using MATLAB.<br>
-              <b>Outcome:</b> Achieved stable locomotion on slopes and steps, winning a RoboMaster National Second Prize.
+              <b>背景：</b>传统四轮底盘通过性及控制鲁棒性不足；<br>
+              <b>方案：</b>倒立摆模型 + LQR 控制器；<br>
+              <b>成果：</b>复杂地形稳定行走，荣获 RoboMaster 全国二等奖。
             </p>
           </div>
         </div>
 
         <div class="list-item publication" data-category="publication">
           <div class="project-description">
-            <h3>RoboMaster 2023 Sentry (Autonomous Vehicle)</h3>
+            <h3>RoboMaster 2023 哨兵（自动车）</h3>
             <p>
-              <b>Challenge:</b> Rigid state transitions in decision-making and poor adaptability of path planning.<br>
-              <b>Approach:</b> Implemented ROS2 + BehaviorTree for high-level decision-making, combined with an improved A* (arc interpolation) for smooth paths.<br>
-              <b>Outcome:</b> Increased responsiveness by 25%, enhanced maneuverability, and won a National Second Prize.
+              <b>问题：</b>决策系统状态切换僵化；<br>
+              <b>方案：</b>ROS2 + BehaviorTree 高层决策 + 改进 A*；<br>
+              <b>成果：</b>机动性提升，夺得全国二等奖。
             </p>
           </div>
         </div>
 
         <div class="list-item publication" data-category="publication">
           <div class="project-description">
-            <h3>RoboMaster 2022 Automatic Targeting System</h3>
+            <h3>RoboMaster 2022 自动瞄准系统</h3>
             <p>
-              <b>Challenge:</b> High-speed motion made it difficult to detect and track dynamic targets accurately.<br>
-              <b>Approach:</b> Developed an OpenCV-based armor detection pipeline with erosion/dilation and PnP; utilized SORT + EKF for tracking.<br>
-              <b>Outcome:</b> Reduced prediction errors to <5%, achieving a National First Prize (Southern Region Third Place).
+              <b>问题：</b>高速运动下目标跟踪精度不足；<br>
+              <b>方案：</b>基于 OpenCV 装甲板检测 + SORT+EKF；<br>
+              <b>成果：</b>预测误差<5%，获全国一等奖（南部季军）。
             </p>
           </div>
         </div>
 
         <div class="list-item publication" data-category="publication">
           <div class="project-description">
-            <h3>Internships: HighQing, DJI, and Kuma Robotics</h3>
+            <h3>实习经历：高擎机电 / 大疆创新 / 库犸动力</h3>
             <p>
               ...
             </p>
           </div>
         </div>
 
-        <!-- 3) Misc: Patents & Future Plans -->
+        <!-- 3) Misc：专利 & 展望 -->
         <div class="list-item misc" data-category="misc">
           <div class="project-description">
-            <h3>Patents & Achievements</h3>
+            <h3>专利与荣誉</h3>
             <p>
-              <b>Granted Patents:</b><br>
-              - A shock-absorbing mobile mechanism for transfer robots | CN218986277U<br>
-              - A switching device for launch tubes | CN117404960A<br>
-              - A shooting device | CN117622850A<br><br>
-              <b>Key Competition Honors:</b><br>
-              - 2022 RoboMaster National First Prize (Southern Region Third Place)<br>
-              - 2023 & 2024 RoboMaster National Second Prize<br>
-              - 2024 RoboCon National Third Prize<br>
+              <b>授权专利：</b><br>
+              - 一种转运机器人减震式移动机构 | CN218986277U<br>
+              - 一种发射管道切换装置 | CN117404960A<br>
+              - 一种射击装置 | CN117622850A<br><br>
+              <b>主要竞赛荣誉：</b><br>
+              - 2022 RoboMaster 全国一等奖（南部季军）<br>
+              - 2023 & 2024 RoboMaster 全国二等奖<br>
+              - 2024 RoboCon 全国三等奖<br>
             </p>
           </div>
         </div>
 
         <div class="list-item misc" data-category="misc">
           <div class="project-description">
-            <h3>Personal Outlook</h3>
+            <h3>个人展望</h3>
             <p>
-              I look forward to delving deeper into intelligent control and AI-assisted robotics, especially in multi-DoF systems.
-              <br>
-              “Striving to excel as a robotics engineer by innovating and practicing with unwavering dedication.”
+              希望在硕士阶段深耕智能控制与人工智能结合... <br>
+              “脚踏实地，努力在创新与实践中不断突破。”
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Footer -->
+      <!-- 底部引用信息 -->
       <div id="footer">
         Website template adapted from 
         <a href="https://andyzeng.github.io/">Andy Zeng</a> and 
         <a href="https://jonbarron.info/">Jon Barron</a>.
       </div>
+  
     </div> <!-- /#main -->
   
-    <!-- Isotope JS for filtering -->
+    <!-- Isotope JS 脚本：实现点击筛选的特效 -->
     <script>
-      // Initialize Isotope
+      // 初始化 Isotope
       var $grid = $('.grid').isotope({
         itemSelector: '.list-item',
         layoutMode: 'fitRows',
@@ -186,14 +191,14 @@
         }
       });
   
-      // Filter button clicks
+      // 筛选按钮点击事件
       $('#filters').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
         localStorage.setItem('filterValue', filterValue);
         $grid.isotope({ filter: filterValue });
       });
   
-      // Highlight the selected button
+      // 高亮选中按钮
       $('.button-group').each(function (i, buttonGroup) {
         var $buttonGroup = $(buttonGroup);
         $buttonGroup.on('click', 'button', function () {
@@ -202,7 +207,7 @@
         });
       });
   
-      // Default filter on page load
+      // 加载时默认的分类
       function update_isotope() {
         var defaultFilterValue = localStorage.getItem('filterValue');
         if (defaultFilterValue == null) {
